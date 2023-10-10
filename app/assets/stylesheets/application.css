@@ -86,6 +86,9 @@ color: red;
 
   .form-group {
     margin-right: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
   }
 
   .form-control {
@@ -102,6 +105,7 @@ color: red;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 5px;
   }
 
   .btn-primary:hover {
