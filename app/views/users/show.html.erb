@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="form-container">
+
+
+<%= render @user %>
+
+<div>
+  <%= link_to "Editar esse usuário",edit_user_path(@user) %> |
+  <%= link_to "Voltar para listagem de usuários", users_path %>
+<br>
+  <%= button_to "Excluir esse usuário", @user, method: :delete ,class:"btn btn-primary"  %>
+</div>
+</div>

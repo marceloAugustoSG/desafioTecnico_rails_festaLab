@@ -1,0 +1,59 @@
+<p style="color: green"><%= notice %></p>
+
+<% if flash[:error] %>
+  <div class="alert ">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+<h1>Usuários</h1>
+<%= form_tag(users_path, method: :get, class: "form-inline mb-3") do %>
+  <div class="form-group mr-2">
+    <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise por qualquer campo" %>
+    <%= submit_tag "Pesquisar", class: "btn btn-primary" %>
+    <%= link_to "Novo usuário", new_user_path , class: "btn btn-primary" %>
+  </div>
+  <div class="form-group">
+  </div>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>CPF</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.cpf %></td>
+       <td>
+        <%= link_to "Detalhes", user %>
+       
+       </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%
+=begin%>
+ <div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Mostrar esse usuário", user %>
+    </p>
+  <% end %> 
+<%
+=end%>
+</div>
+
+
+
