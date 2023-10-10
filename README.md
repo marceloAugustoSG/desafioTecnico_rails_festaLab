@@ -1,24 +1,53 @@
-# README
+# Desafio Técnico em Ruby on Rails
+## Marcelo Augusto Soares Gomes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de exemplo para o desafio técnico em Ruby on Rails.
 
-Things you may want to cover:
+## Pré-requisitos
 
-* Ruby version
+Certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
 
-* System dependencies
+- Ruby 3.2.2
 
-* Configuration
+## Configuração do Projeto
 
-* Database creation
+1. Clone este repositório:
 
-* Database initialization
+```bash
+git clone https://github.com/marceloAugustoSG/desafioTecnico_rails_festaLab.git
 
-* How to run the test suite
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Dependências:
 
-* Deployment instructions
+ bundle install
 
-* ...
+### Rodar o Projeto: 
+
+ rails db:migrate
+
+ rails server
+
+
+
+## DESAFIO:
+
+ ## Faça as seguintes alterações:
+
+
+ 1. O model deve validar o formato do email antes
+de salvar e mostrar mensagem de erro se forem
+inválidos. (validar formato de CPF e Telefone é
+um bônus).
+ ### [X] 1 
+
+ 2. A página do index deve conseguir buscar os
+dados por qualquer um dos campos.
+### [X] 2
+3. Os dados devem ser organizados na view.
+Crie um repositório público no Github e nos envie o
+link.
+### [X] 3
+
+
+
