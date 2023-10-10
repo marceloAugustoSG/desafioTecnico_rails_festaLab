@@ -24,7 +24,11 @@ git clone https://github.com/marceloAugustoSG/desafioTecnico_rails_festaLab.git
 
 ### Rodar o Projeto: 
 
+ rails db:migrate
+
  rails server
+
+
 
 ## DESAFIO:
 
@@ -44,5 +48,6 @@ dados por qualquer um dos campos.
 Crie um repositório público no Github e nos envie o
 link.
 ### [X] 3
+
 
 
