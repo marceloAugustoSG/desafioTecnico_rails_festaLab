@@ -25,3 +25,24 @@ git clone https://github.com/marceloAugustoSG/desafioTecnico_rails_festaLab.git
 ### Rodar o Projeto: 
 
  rails server
+
+## DESAFIO:
+
+ ## Faça as seguintes alterações:
+
+
+ 1. O model deve validar o formato do email antes
+de salvar e mostrar mensagem de erro se forem
+inválidos. (validar formato de CPF e Telefone é
+um bônus).
+ ### [X] 1 
+
+ 2. A página do index deve conseguir buscar os
+dados por qualquer um dos campos.
+### [X] 2
+3. Os dados devem ser organizados na view.
+Crie um repositório público no Github e nos envie o
+link.
+### [X] 3
+
+
